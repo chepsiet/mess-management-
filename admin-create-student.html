@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>admin home</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style type="text/css">
+		label{
+			font-size: 11px;
+		}
+	</style>
+</head>
+<body>
+	<div class="admin-wraper" style="background-color: white">
+		<div class="left-sidebar" style="background-color: #c87437;height: 700px;">
+			<ul>
+				 <li><a href="admin-home.php"> <img src="image/thumb.png" style="border-radius: 50%;" width="100" height="100"></a></li>
+				<li><a href="admin-manage-students.php">Student</a></li>
+			  <li><a href="admin-create-menu.php">Menu</a></li>
+				   <li><a href="admin-create-cartegory.php">Cartegory</a></li>
+				   <li><a href="order-report.php">Reports</a></li>
+				<li><a href="admin-manage-posts.php">Posts</a></li>
+				<li><a href="admin-manage-orders.php">Orders</a></li>
+				<li><a href="admin-view-messages.php">Notifications</a></li>				
+				<li><a href="admin-logout.php">Logout</a></li>
+
+
+			</ul>
+		</div>
+		<div class="admin-content">
+			<div class="button-group"> 
+				<p style="float: right;"> welcome:<span style="font-size: 30px;"></span></p>
+				<p href="#">
+            <img src="image/topimg.png" height="70" width="70" alt="" style="border-radius: 50%"><span style="font-size: 2em; color: green">Mess Management System</span>
+        </p>
+			</div>
+			<i class="page-title text-dark" style="font-size: 25px;"> Add new student</i><span style="float: right;"><button style="color: red; font-weight: bold;"> <a href="admin-manage-students.php"> Manage student</a></button></span>
+			<div class="content" style="border: 1px solid lightgray;"> 
+				
+				<form action="admin-create-student.php" method="post" >
+
+					<div class="col-md-8 col-lg-5 col-lg-offset-1 col-sm-10 col-xs-12 ">
+		            <div class="form-group ">
+			        <label class="control-label">name<span style="color:red;">*</span></label>
+			        <input class="form-control"type="text" name="name" id="name" required>
+		           </div>
+		           </div>
+
+                    <div class="col-md-8 col-lg-5 col-lg-offset-1 col-sm-10 col-xs-12 ">
+		            <div class="form-group ">
+			        <label class="control-label">Reg No<span style="color:red;">*</span></label>
+			        <input class="form-control"type="text" name="regNumber" id="regNumber" required>
+		            </div>
+		            </div>
+
+                    <div class="col-md-8 col-lg-5 col-lg-offset-1 col-sm-10 col-xs-12 ">
+		            <div class="form-group ">
+			        <label class="control-label">School<span style="color:red;">*</span></label>
+			        <input class="form-control"type="text" name="school" id="school" required>
+		           </div>
+		           </div>
+
+                      
+                    <div class="col-md-8 col-lg-5 col-lg-offset-1 col-sm-10 col-xs-12 ">
+		            <div class="form-group ">
+			        <label class="control-label">Email<span style="color:red;">*</span></label>
+			        <input class="form-control"type="email" name="email" id="email" required>
+		            </div>
+   		            </div><br><br>
+   		        </div>
+                     <div class="row" style="position: fixed; left: 46%; bottom: 27%;">
+   		            <div class="col-md-8 col-lg-5 col-lg-offset-1 col-sm-10 col-xs-12 ">
+		            <div class="form-group ">
+			        <label class="control-label">Year<span style="color:red;">*</span></label>
+			        <input class="form-control"type="text" name="year_of_study" id="name" required>
+		           </div>
+		           </div>
+
+
+               
+		           <div class="col-md-8 col-lg-5 col-lg-offset-1 col-sm-10 col-xs-12 ">
+		            <div class="form-group ">
+			        <label class="control-label">Department<span style="color:red;">*</span></label>
+			        <input class="form-control"type="text" name="department" id="department" required>
+		           </div>
+		           </div>
+
+		           <div class="col-md-8 col-lg-5 col-lg-offset-1 col-sm-10 col-xs-12 ">
+		            <div class="form-group ">
+			        <label class="control-label">Place of Residence<span style="color:red;">*</span></label>
+			        <input class="form-control"type="text" name="place_of_residence" id="place_of_residenece" required>
+		           </div>
+		           </div>
+
+		           <div class="col-md-8 col-lg-5 col-lg-offset-1 col-sm-10 col-xs-12 ">
+		            <div class="form-group ">
+			        <label class="control-label">Phone number<span style="color:red;">*</span></label>
+			        <input class="form-control"type="text" name="phone_number" id="phone_number" required>
+		           </div>
+		           </div>
+
+		           <div class="col-md-8 col-lg-5 col-lg-offset-1 col-sm-10 col-xs-12 ">
+		            <div class="form-group ">
+			        <label class="control-label">Username<span style="color:red;">*</span></label>
+			        <input class="form-control"type="text" name="username" id="username" required>
+		           </div>
+		           </div>
+
+		           <div class="col-md-8 col-lg-5 col-lg-offset-1 col-sm-10 col-xs-12 ">
+		            <div class="form-group ">
+			        <label class="control-label">Password<span style="color:red;">*</span></label>
+			        <input class="form-control"type="password" name="password" id="password" required><br>
+		           </div>
+		           </div>
+		       
+
+
+<button type="submit" class="btn btn-success btn-lg" name="submit" style=" height: 40px; margin-left: 11%; width: 150px;">SAVE</button>
+</div>
+</form>  
+			</div>
+
+
+		</div>
+         
+	</div>
+</div>
+</body>
+</html>
