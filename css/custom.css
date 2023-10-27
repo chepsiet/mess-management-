@@ -1,0 +1,43 @@
+.navbar{
+	background-color:darkgray  !important;
+}
+.navbar li a{
+
+	font-family: cursive !important;
+	font-weight: bold!important;
+	color: black !important;
+}
+
+.navbar li a:hover{
+	background-color:sandybrown !important;
+}
+.navbar-default .navbar-nav>.active>a{
+	background-color:lightgreen;
+}
+#slider {
+	width:80%;
+	height: 30%;
+}
+
+body{
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+}
+
+.glyphicon{
+  font-size: 25px;
+  font-weight: bolder;
+ margin: 0px;
+ padding-right:10px;
+}
+
+.border{
+  border-left: 3px solid grey;
+}
+.coloured{
+	color:red !important;
+}
+
+.btn:hover{
+	background-color: green !important;
+}
